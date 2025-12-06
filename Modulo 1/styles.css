@@ -62,7 +62,7 @@ section.Imagen.de.Consola {
   width: 30%;                        /* Ancho del contenido */
   margin: auto;                      /* Centrado automático */
   border-radius: 10px;               /* Bordes redondeados */
-  height: 250px;
+  height: 250px;                     /* Altura del elemento en 250 píxeles */
 }
 
 /* Lista de enlaces */
@@ -81,7 +81,7 @@ a {
   color: rgb(3, 49, 255);              /* Color verde */
   font-weight: bold;                     /* Negrilla */
   text-decoration: none;                 /* Sin subrayado */
-  font-size: 25px;
+  font-size: 25px;                       /* Tamaño de letra*/
 }
 
 /* Efecto al pasar el mouse */
