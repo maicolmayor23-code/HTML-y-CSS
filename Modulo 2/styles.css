@@ -37,7 +37,7 @@ body{
   color:#fff;            /* Color blanco para enlaces */
   text-decoration:none;    /* Quita el subrayado */
   margin-left:20px;        /* Espacio entre cada enlace */
-  font-size:18px;;
+  font-size:18px;;         /* Tamaño de letra*/
 }
 
 .site-header nav a:hover{
@@ -55,12 +55,12 @@ body{
 .post,.card{
   background:rgb(207,207,207);  /* Fondo gris claro */
   padding:20px;                   /* Espacio interno */
-  border-radius:10px;              /* Bordes redondeados */   
-  font-size:20px;
+  border-radius:10px;             /* Bordes redondeados */   
+  font-size:20px;                 /* Tamaño de letra*/
 }
 
 .post header{
-    font-size:20px; 
+    font-size:20px;       /* Tamaño de letra*/
     margin-bottom:15px    /* Espacio debajo del encabezado del post */
 }
 .post h2{
@@ -101,15 +101,15 @@ body{
 }
 .card h3{
   margin-bottom: 20px;  /* Espacio bajo el título de la tarjeta */
-  font-size:30px;
+  font-size:30px;       /* Tamaño de letra*/
 }
 
 .sidebar nav ul{
   list-style:none   /* Quita las viñetas de la lista */
 }
 .sidebar nav li{
-    font-weight: bold;
-    font-size:20px;
+    font-weight: bold;  /* Negrilla al texto*/
+    font-size:20px;     /* Tamaño de letra*/
     margin-bottom:15px  /* Espacio entre enlaces */
 }
 .sidebar nav a{
@@ -117,7 +117,7 @@ body{
   color:#1100fd         /* Color azul del enlace */
 }
 .sidebar nav a:hover{
-  text-decoration:underline /* Subraya al pasar el mouse */
+  text-decoration:underline  /* Subraya al pasar el mouse */
 }
 
 /* ACCESIBILIDAD */
