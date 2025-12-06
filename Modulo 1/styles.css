@@ -1,0 +1,166 @@
+/* Estilo general del cuerpo */
+body {
+  font-family: Arial, sans-serif;          /* Tipo de letra */
+  background-color: #a59494;             /* Color de fondo gris */
+  margin: 0;                               /* Quita márgenes */
+  padding: 0;                              /* Quita relleno */
+}
+
+/* Título principal */
+h1 {
+  text-align: center;                     /* Centrar el texto */
+  background-color: rgb(255, 0, 0);     /* Fondo negro */
+  color: white;                         /* Texto blanco */
+  padding: 20px;                          /* Espaciado interno */
+  width: 50%;                             /* Ancho del contenido */
+  margin: auto;                           /* Centrado automatico*/
+  margin-bottom: 30px;                    /* Separacion del section */
+  border-radius: 10px;                    /* Bordes redondeados */
+ }
+
+/* Contenedor principal */
+main {
+  width: 90%;                             /* Ancho del contenido */
+  margin: auto;                           /* Centrado automático */
+}
+
+/* Todas las secciones */
+section {
+  background-color: rgb(248, 210, 210);      /* Fondo de cada section */
+  margin: 20px 0;                              /* Espaciado entre secciones */
+  padding: 20px;                               /* Espacio interno */
+  border-radius: 10px;                         /* Bordes redondeados */
+  text-align: center;                          /* Texto centrado */
+}
+
+/* Imágenes de consolas */
+section img {
+  margin-top: 10px;                      /* Espacio superior */
+}
+
+/* Tabla de productos */
+table {
+  width: 100%;                           /* Ocupa todo el ancho */
+  border-collapse: collapse;             /* Elimina espacios entre bordes */
+}
+
+/* Encabezados de la tabla */
+th {
+  background-color: rgb(252, 0, 0);      /* Fondo rojo */
+  color: white;                          /* Texto blanco */
+  padding: 10px;                           /* Espacio interno */
+}
+
+/* Celdas de la tabla */
+td {
+  padding: 10px;                         /* Espaciado interno */
+  text-align: justify;                   /* Texto justificado */
+}
+
+/* Recuadro de la sección de enlaces (Consolas) */
+section.Imagen.de.Consola {
+  width: 30%;                        /* Ancho del contenido */
+  margin: auto;                      /* Centrado automático */
+  border-radius: 10px;               /* Bordes redondeados */
+  height: 250px;
+}
+
+/* Lista de enlaces */
+ul {
+  list-style: none;                      /* Quita viñetas */
+  padding: 0;                            /* Quita relleno */
+}
+
+/* Elementos de la lista */
+ul li {
+  margin: 20px 0;                        /* Espaciado entre enlaces */
+}
+
+/* Enlaces */
+a {
+  color: rgb(3, 49, 255);              /* Color verde */
+  font-weight: bold;                     /* Negrilla */
+  text-decoration: none;                 /* Sin subrayado */
+  font-size: 25px;
+}
+
+/* Efecto al pasar el mouse */
+a:hover {
+  color: rgb(22, 0, 83);                     /* Verde oscuro */
+}
+
+/* Reseñas */
+section.Garantias.de.Envios  {
+  width: 60%;              /* Ancho del contenido */
+  margin: auto;            /* Centrado automático */
+  border-radius: 10px;     /* Bordes redondeados */
+  height: 250px;           /* Alto del contenido*/
+}
+
+/* Centrar SOLO el título "Reseñas" */
+section[class="Garantias de Envios"] h2 {
+  text-align: center;
+}
+
+/* Alinear los párrafos de reseñas a la izquierda */
+section[class="Garantias de Envios"] p {
+  text-align: left;
+}
+
+
+/* Footer */
+footer {
+  background-color: rgb(255, 2, 2);              /* Fondo rojo */
+  color: white;                                  /* Texto blanco */
+  text-align: center;                              /* Texto centrado */
+  padding: 15px;                                   /* Espaciado */
+} 
+
+
+/* Alinear las 3 primeras secciones en fila horizontal */
+main {
+  display: flex;                     /* Activa diseño horizontal */
+  flex-wrap: wrap;                   /* Permite que las demás bajen */
+  justify-content: space-between;    /* Espacio entre las 3 */
+}
+
+/* Solo las 3 secciones de las consolas, PlayStation, Xbox y Nintendo */
+main section:nth-of-type(1),
+main section:nth-of-type(2),
+main section:nth-of-type(3) {
+  width: 30%;                       /* Cada una ocupa 30% */
+}
+
+/* Las demás secciones quedan debajo, apartir de la tabla */
+main section:nth-of-type(n+4) {
+  width: 100%;                       /* Ocupan todo el ancho */
+}
+
+
+/* Separación visual de los recuadros de las 3 consolas, Diseño de los recuadros */
+main section:nth-of-type(1),
+main section:nth-of-type(2),
+main section:nth-of-type(3) {
+  margin: 1px;                                /* Espacio entre cada recuadro */
+  padding: 3px;                               /* Espacio interno */
+  border: 3px solid #ff0000;                /* Borde suave */
+  border-radius: 15px;                        /* Bordes redondeados */
+  background-color: #fcfafa;                /* Fondo blanco */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra más marcada */
+}
+
+/* Efecto visual cuando pasas el mouse */
+main section:nth-of-type(1):hover,
+main section:nth-of-type(2):hover,
+main section:nth-of-type(3):hover {
+  transform: scale(1.05);          /* Hace zoom suave */
+  transition: 0.3s;                /* Animación suave */
+}
+
+
+
+
+
+
+
+

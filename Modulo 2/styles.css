@@ -1,0 +1,161 @@
+*{
+  box-sizing:border-box;   /* Hace que padding y borde cuenten dentro del tamaño total */
+  margin:0;                /* Elimina márgenes por defecto */
+  padding:0                /* Elimina rellenos por defecto */
+}
+
+body{
+  font-family:Arial,sans-serif;   /* Define la fuente del sitio */
+  background:#fff;              /* Color de fondo blanco */
+  color:#222;                   /* Color del texto */
+  line-height:1.6                 /* Altura entre líneas del texto */
+}
+
+.container{
+  max-width:1100px;   /* Limita el ancho máximo del contenido */
+  margin:0 auto;      /* Centra el contenedor horizontalmente */
+  padding:20px        /* Espacio interno alrededor del contenido */
+}
+
+/* HEADER */
+.site-header{
+  background:#222;   /* Fondo oscuro del encabezado */
+  color:#fff         /* Texto en color blanco */
+}
+
+.site-header .container{
+  display:flex;                    /* Activa Flexbox */
+  justify-content:space-between;   /* Separa título y menú */
+  align-items:center               /* Alinea verticalmente los elementos */
+}
+
+.site-title{
+  font-size:50px    /* Tamaño del texto del título */
+}
+
+.site-header nav a{
+  color:#fff;            /* Color blanco para enlaces */
+  text-decoration:none;    /* Quita el subrayado */
+  margin-left:20px;        /* Espacio entre cada enlace */
+  font-size:18px;;
+}
+
+.site-header nav a:hover{
+  text-decoration:underline   /* Subraya cuando pasas el mouse */
+}
+
+/* LAYOUT */
+.layout{
+  display:grid;                   /* Activa CSS Grid */
+  grid-template-columns:3fr 1fr;  /* 75% contenido - 25% sidebar */
+  gap:30px                        /* Espacio entre columnas */
+}
+
+/* POST */
+.post,.card{
+  background:rgb(207,207,207);  /* Fondo gris claro */
+  padding:20px;                   /* Espacio interno */
+  border-radius:10px;              /* Bordes redondeados */   
+  font-size:20px;
+}
+
+.post header{
+    font-size:20px; 
+    margin-bottom:15px    /* Espacio debajo del encabezado del post */
+}
+.post h2{
+  margin-bottom:5px   /* Espacio debajo del título */
+}
+.post p{
+  margin-bottom:15px  /* Espacio entre párrafos */
+}
+.post h3{
+  margin:20px 0 10px  /* Espacio arriba y abajo del subtítulo */
+}
+.post ul{
+  margin-left:20px   /* Sangría de la lista */
+}
+
+.post blockquote{
+  border-left:4px solid #000;  /* Línea decorativa a la izquierda */
+  padding-left:10px;             /* Espacio entre línea y texto */
+  margin:10px 0;                 /* Margen superior e inferior */
+  font-style:italic;             /* Texto en cursiva */
+  color:#242222                /* Color gris oscuro */
+}
+
+.small{
+  font-size:20px;     /* Tamaño de texto pequeño */
+  color:#000        /* Color negro */
+}
+
+/* SIDEBAR */
+.sidebar{
+  display:flex;             /* Activa Flexbox */
+  flex-direction:column;    /* Elementos en vertical */
+  gap:30px                  /* Espacio entre tarjetas */
+}
+
+.card{
+  padding:20px    /* Espacio interno de cada tarjeta */
+}
+.card h3{
+  margin-bottom: 20px;  /* Espacio bajo el título de la tarjeta */
+  font-size:30px;
+}
+
+.sidebar nav ul{
+  list-style:none   /* Quita las viñetas de la lista */
+}
+.sidebar nav li{
+    font-weight: bold;
+    font-size:20px;
+    margin-bottom:15px  /* Espacio entre enlaces */
+}
+.sidebar nav a{
+  text-decoration:none;   /* Quita subrayado */
+  color:#1100fd         /* Color azul del enlace */
+}
+.sidebar nav a:hover{
+  text-decoration:underline /* Subraya al pasar el mouse */
+}
+
+/* ACCESIBILIDAD */
+.sr-only{
+  position:absolute;  /* Saca el elemento del flujo normal */
+  left:-9999px        /* Lo oculta visualmente fuera de pantalla */
+}
+
+/* FOOTER */
+.site-footer{
+  width:20%;                           /* Ancho del footer */
+  background:rgb(255, 255, 255);     /* Fondo gris */
+  padding:10px;                        /* Espaciado interno */
+  margin:40px auto;                    /* Separación y centrado horizontal */
+  border-radius:8px                    /* Bordes redondeados */
+}
+
+.site-footer .container{
+  display:flex;             /* Activa Flexbox */
+  flex-direction:column;    /* Elementos en vertical */
+  align-items:center;       /* Centra horizontalmente */
+  gap:10px;                 /* Espacio entre botón y texto */
+  text-align:center         /* Centra el texto */
+}
+
+.site-footer a{
+  display:inline-block;        /* Permite aplicar transformaciones */
+  text-decoration:none;        /* Quita subrayado */
+  background:#000000;        /* Fondo oscuro del botón */
+  color:#fff;                /* Texto blanco */
+  padding:10px 20px;           /* Tamaño interno del botón */
+  border-radius:8px;           /* Bordes redondeados */
+  font-weight:bold;            /* Texto en negrita */
+  transition:.3s               /* Animación suave */
+}
+
+.site-footer a:hover{
+  transform:scale(1.05);     /* Efecto de zoom */
+  background:#000         /* Oscurece al pasar el mouse */
+}
+
